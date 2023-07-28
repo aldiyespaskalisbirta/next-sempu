@@ -3,11 +3,11 @@
 // import Image from "next/image";
 export default function Home() {
   return (
-    <section className="home flex items-center justify-center">
-      <header className="bg-gray-500 min-h-screen">
-        <h1>THIS IS HOME</h1>
+    <div className="w-4/5">
+      <header>
+        <h1>Home</h1>
       </header>
-      <main></main>
-    </section>
+      <main>THIS IS HOME</main>
+    </div>
   );
 }

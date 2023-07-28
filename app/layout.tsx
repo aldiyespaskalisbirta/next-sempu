@@ -7,10 +7,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="garden">
       <body className="min-h-screen relative scrollbar-hide">
         <Navbar />
-        {children}
+        <section className="grid place-items-center bg-red-800">
+          {children}
+        </section>
         <Footer />
       </body>
     </html>

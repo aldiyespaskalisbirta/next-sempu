@@ -6,6 +6,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  daisyui: {
+    themes: ["garden", "dark", "cupcake"],
+  },
   theme: {
     extend: {
       backgroundImage: {
@@ -15,5 +18,9 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwind-scrollbar-hide"), require("flowbite/plugin")],
+  plugins: [
+    require("tailwind-scrollbar-hide"),
+    require("flowbite/plugin"),
+    require("daisyui"),
+  ],
 };
