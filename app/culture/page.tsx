@@ -1,7 +1,8 @@
-import React from "react";
-
-const Culture = () => {
-  return <div>Culture</div>;
-};
-
-export default Culture;
+export default function Culture() {
+  return (
+    <div>
+      <header>Culture</header>
+      <main>THIS IS CULTURE</main>
+    </div>
+  );
+}
