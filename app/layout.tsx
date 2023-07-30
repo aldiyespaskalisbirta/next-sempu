@@ -8,12 +8,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-theme="garden">
-      <body className="min-h-screen relative scrollbar-hide">
-        <Navbar />
-        <section className="grid place-items-center bg-red-800">
-          {children}
-        </section>
-        <Footer />
+      <body className="scrollbar-hide">
+        <div className="min-h-screen relative ">
+          <Navbar />
+          <section className="bg-gray-100">{children}</section>
+          <Footer />
+        </div>
       </body>
     </html>
   );
